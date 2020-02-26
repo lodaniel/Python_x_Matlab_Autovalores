@@ -1,0 +1,23 @@
+% Author: Luciano de Oliveira Daniel
+% https://sites.google.com/site/professorlucianodaniel
+
+function calc_autovalores_plota(X1, Y1, X2, Y2)
+figure1 = figure;
+axes1 = axes('Parent',figure1);
+hold(axes1,'on');
+plot(X1,Y1,'DisplayName','Matlab','MarkerSize',8,'Marker','+',...
+    'LineStyle','none','LineWidth',1.5,...
+    'Color',[1 0 0]);
+plot(X2,Y2,'DisplayName','Python','MarkerSize',12,'Marker','o',...
+    'LineStyle','none',...
+    'Color',[0 0 1]);
+box(axes1,'on');
+xlabel('Parte Real','FontSize',20);
+ylabel('Parte Imaginária','FontSize',20);
+box(axes1,'on');
+set(axes1,'FontName','Times','FontSize',18,'GridAlpha',0.5,'XGrid','on',...
+    'YGrid','on','Xlim',[-3,3],'Ylim',[-3,4],'YTick',[-3 -2 -1 0 1 2 3 4]);
+legend1 = legend(axes1,'show');
+set(legend1,...
+    'Position',[0.82231869709806 0.782045954071362 0.145502642782592 0.15476190050443],...
+    'FontSize',18);
